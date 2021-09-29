@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+#name-tag {
+    margin: 20px;
+    height: 270px;
+    width: 400px;
+    background-color: lightgray;
+}
+
+nav * {
+    margin: 5px;
+}
+
+header, main, footer {
+    margin-left: 5px;
+}
+
+header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 390px;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    width: 390px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    font-family: Cedarville Cursive, cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+footer {
+    width: 390px;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 30px;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightblue;
+}
