@@ -16,7 +16,7 @@ const newPronouns = document.getElementById('pronoun-selector');
 const fontButton = document.getElementById('font-button');
 const newFont = document.getElementById('font-selector');
 
-const nameChangeNumber = document.getElementById('number-of-name-changes')
+const nameChangeNumber = document.getElementById('number-of-name-changes');
 
 // NAME CHANGE 
 // event listeners are setup in this section
