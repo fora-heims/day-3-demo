@@ -10,6 +10,9 @@ const pronouns = document.getElementById('name-tag-pronouns');
 const pronounButton = document.getElementById('pronoun-button');
 const newPronouns = document.getElementById('pronoun-selector');
 
+const fontButton = document.getElementById('font-button');
+const newFont = document.getElementById('font-selector');
+
 // NAME CHANGE 
 // event listeners are setup in this section
 nameButton.addEventListener('click', ()=>{
@@ -38,4 +41,15 @@ pronounButton.addEventListener('click', ()=>{
     let newPronounValue = newPronouns.value;
     //replace the text in the nametag with the value
     pronouns.textContent = newPronounValue;
+});
+
+// FONT CHANGE
+// event listeners are setup in this section
+fontButton.addEventListener('click', ()=>{
+    // when button is clicked
+    // get the value of the input
+    let newFontValue = newFont.value;
+    //replace the font style of the nametag with the value
+    tagName.style.fontFamily = newFontValue;
+    pronouns.style.fontFamily = newFontValue;
 });
