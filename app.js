@@ -1,4 +1,7 @@
 // variables are defined in this section.
+const tagWholeTop = document.getElementById('header-name-tag');
+const tagWholeBottom = document.getElementById('footer-name-tag');
+
 const tagName = document.getElementById('name-tag-name');
 const nameButton = document.getElementById('name-button');
 const newName = document.getElementById('name-input');
@@ -13,6 +16,8 @@ const newPronouns = document.getElementById('pronoun-selector');
 const fontButton = document.getElementById('font-button');
 const newFont = document.getElementById('font-selector');
 
+const nameChangeNumber = document.getElementById('number-of-name-changes')
+
 // NAME CHANGE 
 // event listeners are setup in this section
 nameButton.addEventListener('click', ()=>{
@@ -21,6 +26,9 @@ nameButton.addEventListener('click', ()=>{
     let newNameValue = newName.value;
     //replace the text in the nametag with the value
     tagName.textContent = newNameValue;
+    // number of name changes addition
+    let nameNumber = Number(nameChangeNumber.textContent) + 1;
+    nameChangeNumber.textContent = nameNumber;
 });
 
 // COLOR CHANGE
@@ -30,7 +38,8 @@ colorButton.addEventListener('click', ()=>{
     // get the value of the input
     let newColorValue = newColor.value;
     //update the style of the background color with the value
-    tagName.style.backgroundColor = newColorValue;
+    tagWholeTop.style.backgroundColor = newColorValue;
+    tagWholeBottom.style.backgroundColor = newColorValue;
 });
 
 // PRONOUN CHANGE

@@ -11,6 +11,7 @@
 
 nav * {
     margin: 5px;
+    max-height: 270px;
 }
 
 header, main, footer {
@@ -58,4 +59,11 @@ footer {
 .pronouns {
     font-size: 1rem;
     display: inline-flex;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: lightslategray;
 }

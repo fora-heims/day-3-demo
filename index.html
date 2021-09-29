@@ -18,13 +18,14 @@
             <li>
                 <input id="name-input" type="text" placeholder="Enter Name Here">
                 <input id="name-button" type="button" value="Update Name">
+                <div id="name-change-count">You have changed the name this many times: <span id="number-of-name-changes">0</span></div>
             </li>
             <li>
                 <select name="color" id="color-selector">
-                    <option value="lightpink">light pink</option>
-                    <option value="lightblue">light blue</option>
-                    <option value="lightgreen">light green</option>
-                    <option value="white">white</option>
+                    <option value="magenta">magenta</option>
+                    <option value="gold">gold</option>
+                    <option value="lime">lime</option>
+                    <option value="black">black</option>
                 <input id="color-button" type="button" value="Change Color">
             </li>
             <li>
@@ -49,8 +50,9 @@
             </li>
         </ul>
     </nav>
+
     <section id="name-tag">
-        <header>
+        <header id="header-name-tag">
             <h1>Hello</h1>
             <h2>my name is</h2>
         </header>
@@ -58,7 +60,7 @@
             <span id="name-tag-name">Fora Heims</span>
             <span class="pronouns" id="name-tag-pronouns">she/her</span>
         </main>
-        <footer></footer>
+        <footer id="footer-name-tag"></footer>
     </section>
     <script type="module" src="./app.js"></script>
 </body>
