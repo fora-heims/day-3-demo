@@ -3,7 +3,6 @@ const tagName = document.getElementById('name-tag-name');
 const nameButton = document.getElementById('name-button');
 const newName = document.getElementById('name-input');
 
-const color = document.getElementById('#');
 const colorButton = document.getElementById('color-button');
 const newColor = document.getElementById('color-selector');
 
@@ -27,8 +26,8 @@ colorButton.addEventListener('click', ()=>{
     // when button is clicked
     // get the value of the input
     let newColorValue = newColor.value;
-    //replace the text in the nametag with the value
-    color.classList = newColorValue;
+    //update the style of the background color with the value
+    tagName.style.backgroundColor = newColorValue;
 });
 
 // PRONOUN CHANGE
