@@ -16,7 +16,7 @@
     <nav>
         <ul>
             <li>
-                <input id="name-input" type="text" value="Enter Name Here">
+                <input id="name-input" type="text" placeholder="Enter Name Here">
                 <input id="name-button" type="button" value="Update Name">
             </li>
             <li>
@@ -25,13 +25,14 @@
                     <option value="lightblue">light blue</option>
                     <option value="lightgreen">light green</option>
                     <option value="white">white</option>
-                </select>
                 <input id="color-button" type="button" value="Change Color">
             </li>
             <select id="pronoun-selector" name="pronouns">
                 <option value="she/her">she/her</option>
                 <option value="he/him">he/him</option>
-                <option value="they">they/them</option>
+                <option value="they/them">they/them</option>
+                <option value="">Custom<input placeholder="Custom Pronouns" type="text"></option>
+            </select>
             </select>
             <input id="pronoun-button" type="button" value="Update Pronouns">
         </ul>
@@ -41,7 +42,10 @@
             <h1>Hello</h1>
             <h2>my name is</h2>
         </header>
-        <main id="name-tag-name">Fora Heims</main>
+        <main>
+            <span id="name-tag-name">Fora Heims</span>
+            <span class="pronouns" id="name-tag-pronouns">she/her</span>
+        </main>
         <footer></footer>
     </section>
     <script type="module" src="./app.js"></script>

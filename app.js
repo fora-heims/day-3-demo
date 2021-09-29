@@ -6,7 +6,7 @@ const newName = document.getElementById('name-input');
 const colorButton = document.getElementById('color-button');
 const newColor = document.getElementById('color-selector');
 
-const pronouns = document.getElementById('#');
+const pronouns = document.getElementById('name-tag-pronouns');
 const pronounButton = document.getElementById('pronoun-button');
 const newPronouns = document.getElementById('pronoun-selector');
 
