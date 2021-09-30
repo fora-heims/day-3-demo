@@ -3,7 +3,7 @@
 }
 
 #name-tag {
-    margin: 20px;
+    margin: 30px;
     height: 270px;
     width: 400px;
     background-color: lightgray;
@@ -11,14 +11,23 @@
 
 nav * {
     margin: 5px;
-    max-height: 270px;
+}
+
+nav {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: lightcoral;
+    height: 380px;
+    width: 361px;
+    border-radius: 10px;
+    border: maroon 5px solid;
 }
 
 header, main, footer {
     margin-left: 5px;
 }
 
-header {
+header {margin-top: 2px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: red;
