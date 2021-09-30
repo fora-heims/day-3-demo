@@ -12,6 +12,7 @@ const newColor = document.getElementById('color-selector');
 const pronouns = document.getElementById('name-tag-pronouns');
 const pronounButton = document.getElementById('pronoun-button');
 const newPronouns = document.getElementById('pronoun-selector');
+const customPronouns = document.getElementById('custom-pronouns');
 
 const fontButton = document.getElementById('font-button');
 const newFont = document.getElementById('font-selector');
@@ -45,11 +46,13 @@ colorButton.addEventListener('click', ()=>{
 // PRONOUN CHANGE
 // event listeners are setup in this section
 pronounButton.addEventListener('click', ()=>{
-    // when button is clicked
-    // get the value of the input
     let newPronounValue = newPronouns.value;
-    //replace the text in the nametag with the value
-    pronouns.textContent = newPronounValue;
+    let newCustomValue = customPronouns.value;
+    if (newPronounValue === 'Custom') {
+        pronouns.textContent = newCustomValue;
+    } else {
+        pronouns.textContent = newPronounValue;
+    }
 });
 
 // FONT CHANGE
