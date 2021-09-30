@@ -3,21 +3,21 @@
 }
 
 #name-tag {
-    margin: 30px;
+    margin: 10vw;
     height: 270px;
     width: 400px;
     background-color: lightgray;
 }
 
 nav * {
-    margin: 5px;
+    margin: 4px;
 }
 
 nav {
-    margin-top: 30px;
+    margin-left: 10vw;
     padding: 10px;
     background-color: lightcoral;
-    height: 380px;
+    height: 310px;
     width: 361px;
     border-radius: 10px;
     border: maroon 5px solid;
@@ -75,4 +75,24 @@ body {
     align-content: center;
     justify-content: center;
     background-color: lightslategray;
+    flex-direction: column;
+}
+
+.button {
+    background-color: darkolivegreen;
+    color: rgb(255, 8, 255);
+    font-weight: 600;
+    float: right;
+}
+
+.button:hover {
+    background-color: darkslategrey;
+}
+
+.text-input {
+    width: 150px;
+}
+
+.bottom-element {
+    margin-top: 36px;
 }
