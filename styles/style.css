@@ -1,9 +1,8 @@
-* {
-    box-sizing: border-box;
-}
-
 #name-tag {
-    margin: 10vw;
+    box-sizing: initial;
+    border: darkslategrey solid 40px;
+    border-radius: 40px;
+    margin: 80px 40px 40px 40px;
     height: 270px;
     width: 400px;
     background-color: lightgray;
@@ -11,16 +10,19 @@
 
 nav * {
     margin: 4px;
+    font-family: monospace;
 }
 
 nav {
-    margin-left: 10vw;
+    box-sizing: initial;
+    margin-left: 53px;
+    margin-bottom: 53px;
     padding: 10px;
-    background-color: lightcoral;
+    background-color: salmon;
     height: 310px;
     width: 361px;
-    border-radius: 10px;
-    border: maroon 5px solid;
+    border-radius: 40px;
+    border: darkolivegreen 40px solid;
 }
 
 header, main, footer {
@@ -74,25 +76,47 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: lightslategray;
+    background-color: khaki;
     flex-direction: column;
 }
 
 .button {
-    background-color: darkolivegreen;
-    color: rgb(255, 8, 255);
+    background-color: lightgreen;
+    color: darkslategrey;
     font-weight: 600;
     float: right;
+    border: darkorange 3px solid;
+    border-radius: 3px;
 }
 
 .button:hover {
-    background-color: darkslategrey;
+    background-color: darkorange;
+    cursor: pointer;
 }
 
 .text-input {
-    width: 150px;
+    width: 170px;
+    background-color: darkslategrey;
+    color: white;
+    border: darkorange 3px solid;
+    border-radius: 3px;
+}
+
+#custom-pronouns {
+    width: 100px;
 }
 
 .bottom-element {
     margin-top: 36px;
+}
+
+.select {
+    background-color: darkslategrey;
+    color: white;
+    border: darkorange 3px solid;
+    border-radius: 3px;
+}
+
+select:hover, .text-input:hover {
+    background-color: midnightblue;
 }
